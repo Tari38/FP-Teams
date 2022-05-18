@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #111;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.logo-spin {
+    width: 80px;
+    height: 80px;
+    background: #111;
+    border-width: 15px;
+    border-style: double;
+    border-color: goldenrod;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px 1px rgb(169, 216, 238);
+    margin: auto;
+    animation-name: ring-spin;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    animation-timing-function: linear;
+}
+
+/* #inner-circle {
+    width: 77px;
+    height: 77px;
+    background: #111;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(169, 216, 238);
+    box-shadow: 1px 1px 1px 1px rgb(169, 216, 238);
+    border-radius: 50%;
+    margin: auto;
+    animation-name: ring-spin;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    animation-timing-function: ease-out;
+} */
+
+@keyframes ring-spin {
+        0% {transform: rotateZ(0);}
+        50% {transform: rotateZ(180deg);}
+        100% {transform: rotateZ(360deg);}
+}
+
+header > h1 {
+    color: goldenrod;
+    font-family: "Macondo", cursive;
+    text-align: center;
+}
+
+table {
+    margin: 20px auto;
+    justify-content: center;
+}
+
+table, tr, td {
+    border: 1px double goldenrod;
+}
+
+table th {
+    font-family: "Macondo", cursive;
+    background-color: #111;
+    color: goldenrod;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+table td {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+}
+
+img {
+    max-height: 100px;
+    max-width: 100px;
+    transition: .4s ease-in-out;
+    padding: 5px;
+}
+
+img:hover {
+    transform: scale(3);
+    transition: .4s ease-in-out;
+}
